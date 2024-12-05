@@ -19,7 +19,7 @@
 
 .cart-modal {
   background: white;
-  padding: 0px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -81,16 +81,22 @@
   color: var(--secondary-color);
 }
 
-.item-actions .remove-item {
-  padding: 0;
-  color: #e63946;
+.item-actions .remove-item,
+.item-actions .edit-item {
   background: none;
   border: none;
+  padding: 0;
   cursor: pointer;
+  color: var(--light-text-color);
 }
 
-.item-actions .remove-item:hover {
+.item-actions .remove-item:hover,
+.item-actions .edit-item:hover {
   text-decoration: underline;
+}
+
+.item-actions .remove-item {
+  color: #e63946;
 }
 
 .checkout-btn {

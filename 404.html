@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/shopping_cart.css" />
+    <link rel="stylesheet" href="css/404.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Products</title>
+  </head>
+  <body>
+    <div w3-include-html="components/navbar.html"></div>
+
+    <div class="notfound-page">
+      <img src="images/404_illustration.png" alt="404 illustration" />
+      <h2>COMING SOON</h2>
+      <p>
+        Kalena's Bakery is preparing something delicious! Our social media
+        presence and online ordering are currently being crafted. Stay tuned for
+        updates and sweet surprises.
+      </p>
+      <button class="home-btn" aria-label="Go to Home Page">
+        <i class="fa fa-home fa-lg"></i>
+        Back to homepage
+      </button>
+    </div>
+    <div w3-include-html="components/footer.html"></div>
+    <script>
+      w3.includeHTML(() => {
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const navbarMenu = document.getElementById("navbar-menu");
+
+        hamburgerBtn?.addEventListener("click", () => {
+          navbarMenu.classList.add("open");
+        });
+
+        closeBtn?.addEventListener("click", () => {
+          navbarMenu.classList.remove("open");
+        });
+
+        const cartIcon = document.getElementById("shopping-cart");
+        const overlay = document.getElementById("cart-overlay");
+        const closeOverlay = document.getElementById("close-overlay");
+        console.log("clicked");
+        cartIcon?.addEventListener("click", () => {
+          overlay.classList.add("active");
+        });
+
+        closeOverlay?.addEventListener("click", () => {
+          overlay.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
