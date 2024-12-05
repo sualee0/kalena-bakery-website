@@ -1,0 +1,146 @@
+.container {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.circle-section {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  justify-content: start;
+  align-items: center;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background-color: var(--background-white);
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.circle:hover,
+.circle.active {
+  background-color: var(--navbar-color);
+}
+
+.content-section-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.products-page h2 {
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.content-section {
+  padding: 1.2rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.content-image-wrapper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden; /* Prevents the gradient from spilling out */
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.content-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top right,
+    transparent 50%,
+    var(--navbar-color)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.content-image-wrapper:hover .content-image {
+  transform: scale(1.05); /* Optional: Adds a zoom effect on hover */
+}
+
+.content-image-wrapper:hover::after {
+  opacity: 1;
+}
+.title {
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.description {
+  color: #6d5f6d;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.rating-container {
+  color: #ffb400;
+  font-size: 1rem;
+}
+
+.rating-container .fa-star.active {
+  color: #ffb400;
+}
+
+/* desktop content */
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .circle-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-section-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .products-page h2 {
+    margin-top: 40px;
+  }
+
+  .content-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .content-section-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
