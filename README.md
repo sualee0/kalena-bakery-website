@@ -5,7 +5,9 @@ By: Meliora Ho, Jade Lin, and Emily Lee
 Emily's cousin, Kalena, has opened an online bakery on Instagram. 
 
 Credit:
-- Photos: Emily's cousin, Kalena
+- Photos:
+  - Bakery items: Emily's cousin, Kalena
+  - Illustration in 404.html: https://notioly.com/
 - Icons: [font-awesome icons](https://fontawesome.com/)
 - JS scripts:
     - [To reuse footer and navbar](https://www.w3schools.com/howto/howto_html_include.asp)
