@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* global Colors */
 :root {
   --text-color: #382f38;
   --navbar-color: #eb92a2;
@@ -14,7 +13,6 @@
   --background-white: #fcf4f5;
 }
 
-/* general styles */
 h2 {
   font-size: 2rem;
   color: var(--text-color);

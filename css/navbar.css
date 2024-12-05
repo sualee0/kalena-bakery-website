@@ -84,7 +84,7 @@
   height: 200px;
 }
 
-/* desktop navbar */
+/* desktop view */
 @media (min-width: 768px) {
   .navbar-menu {
     position: static;

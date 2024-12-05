@@ -55,7 +55,7 @@
   width: 200px;
   height: 200px;
   position: relative;
-  overflow: hidden; /* Prevents the gradient from spilling out */
+  overflow: hidden;
   margin-bottom: 1rem;
   justify-content: center;
 }
@@ -84,12 +84,13 @@
 }
 
 .content-image-wrapper:hover .content-image {
-  transform: scale(1.05); /* Optional: Adds a zoom effect on hover */
+  transform: scale(1.05);
 }
 
 .content-image-wrapper:hover::after {
   opacity: 1;
 }
+
 .title {
   text-transform: uppercase;
   color: var(--text-color);
@@ -112,7 +113,7 @@
   color: #ffb400;
 }
 
-/* desktop content */
+/* desktop view */
 @media (min-width: 768px) {
   .container {
     padding: 2rem;
