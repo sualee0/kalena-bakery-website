@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalena's Bakery</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/individual.css">
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/shopping_cart.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/individual.css">
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/shopping_cart.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link
@@ -19,12 +19,12 @@
 </head>
 <body>
     
-    <div w3-include-html="components/navbar.html"></div>
+    <div w3-include-html="/components/navbar.html"></div>
     
     <main class="product_container">
         <section class="product-section">
             <div class="product-pic">
-                <img src="images/products/almond cupcake.png" alt="almond cupcake">
+                <img src="/images/products/almond_cupcake.png" alt="almond cupcake">
             </div>
 
             <div class="product-content">
@@ -103,8 +103,8 @@
             <p class="review-text">These cupcakes are amazing! I'll be back for more!</p>
     </main>
     
-    <div w3-include-html="components/footer.html"></div>
-    <script src="js/individual.js"></script>
+    <div w3-include-html="/components/footer.html"></div>
+    <script src="/js/individual.js"></script>
     <script>
         w3.includeHTML(() => {
           const hamburgerBtn = document.getElementById("hamburger-btn");
