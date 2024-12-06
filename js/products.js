@@ -120,11 +120,16 @@ const renderProducts = (products) => {
     const imageWrapper = document.createElement("div");
     imageWrapper.classList.add("content-image-wrapper");
 
-    const imageElement = document.createElement("img");
-    imageElement.src = data.image;
-    imageElement.alt = data.title;
-    imageElement.classList.add("content-image");
-    imageWrapper.appendChild(imageElement);
+  const imageLink = document.createElement("a");
+  imageLink.href = "/individual.html"; 
+
+  const imageElement = document.createElement("img");
+  imageElement.src = data.image;
+  imageElement.alt = data.title;
+  imageElement.classList.add("content-image");
+
+  imageLink.appendChild(imageElement);
+  imageWrapper.appendChild(imageLink);
 
     const title = document.createElement("h3");
     title.classList.add("title");
@@ -155,10 +160,8 @@ const renderProducts = (products) => {
   });
 };
 
-// default render all products
 renderProducts(contentData);
 
-// filter functionality
 const circles = document.querySelectorAll(".circle");
 circleElements.forEach((circle) => {
   circle.addEventListener("click", () => {
