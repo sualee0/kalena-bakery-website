@@ -41,8 +41,8 @@
         </div>
       </div>
       <div class="content-section-container"></div>
-      <div w3-include-html="/components/footer.html"></div>
     </div>
+    <div w3-include-html="/components/footer.html"></div>
 
     <script src="/js/products.js"></script>
     <script>
@@ -62,7 +62,6 @@
         const cartIcon = document.getElementById("shopping-cart");
         const overlay = document.getElementById("cart-overlay");
         const closeOverlay = document.getElementById("close-overlay");
-        console.log("clicked");
         cartIcon?.addEventListener("click", () => {
           overlay.classList.add("active");
         });

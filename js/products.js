@@ -120,16 +120,16 @@ const renderProducts = (products) => {
     const imageWrapper = document.createElement("div");
     imageWrapper.classList.add("content-image-wrapper");
 
-  const imageLink = document.createElement("a");
-  imageLink.href = "/individual.html"; 
+    const imageElement = document.createElement("img");
+    imageElement.src = data.image;
+    imageElement.alt = data.title;
+    imageElement.classList.add("content-image");
 
-  const imageElement = document.createElement("img");
-  imageElement.src = data.image;
-  imageElement.alt = data.title;
-  imageElement.classList.add("content-image");
+    imageWrapper.addEventListener("click", () => {
+      window.location.href = "/individual/index.html";
+    });
 
-  imageLink.appendChild(imageElement);
-  imageWrapper.appendChild(imageLink);
+    imageWrapper.appendChild(imageElement);
 
     const title = document.createElement("h3");
     title.classList.add("title");
@@ -169,7 +169,6 @@ circleElements.forEach((circle) => {
     circle.classList.add("active");
 
     const category = circle.dataset.category;
-    console.log(category);
     if (category == "ALL") {
       renderProducts(contentData);
     }

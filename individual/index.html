@@ -47,60 +47,6 @@
 
         <section class="review-container">
             <h4 class="review-title">Reviews</h4>
-            <div class="review-item">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <span class="review-date">Dec 3rd, 2024</span>
-                <p class="review-text">Best cupcakes ever!</p>
-            </div>
-            <div class="review-item">
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-              </div>
-              <span class="review-date">Nov 11th, 2024</span>
-              <p class="review-text">Better than the ones at the store!</p>
-          </div>
-            <div class="review-item">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <span class="review-date">Oct 22nd, 2024</span>
-                <p class="review-text">This is a great cupcake! I love the almond flavor and the frosting is delicious. The only downside is that it's a bit too sweet for me.</p>
-            </div>
-            <div class="review-item">
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-              </div>
-              <span class="review-date">Oct 19th, 2024</span>
-              <p class="review-text">Definitely recommend these cupcakes! They're moist and flavorful, and the frosting is perfect.</p>
-          </div>
-          <div class="review-item">
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <span class="review-date">Sep 21th, 2024</span>
-            <p class="review-text">These cupcakes are amazing! I'll be back for more!</p>
     </main>
     
     <div w3-include-html="/components/footer.html"></div>
@@ -123,7 +69,6 @@
           const addToCartButton = document.getElementById('add-to-cart');
           const overlay = document.getElementById("cart-overlay");
           const closeOverlay = document.getElementById("close-overlay");
-          console.log("clicked");
           cartIcon?.addEventListener("click", () => {
             overlay.classList.add("active");
           });
