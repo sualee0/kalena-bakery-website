@@ -7,6 +7,8 @@ Emily's cousin, Kalena, has opened an online bakery on Instagram.
 Credit:
 - Photos:
   - Bakery items: Emily's cousin, Kalena
+  - Header Image: https://uk.pinterest.com/pin/919508448930231347/
+  - About Image: https://www.pinterest.com/pin/9640586696108970/
   - Illustration in 404.html: https://notioly.com/
 - Icons: [font-awesome icons](https://fontawesome.com/)
 - JS scripts:
