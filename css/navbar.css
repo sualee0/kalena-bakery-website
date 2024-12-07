@@ -76,7 +76,7 @@
 
 .fa:hover,
 .navbar a:hover {
-  color: var(--navbar-color);
+  color: var(--secondary-color);
 }
 
 .navbar img {
