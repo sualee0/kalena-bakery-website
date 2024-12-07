@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalena's Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/individual.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/shopping_cart.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+       <link rel="icon" type="image/png" href="images/logo.png" />
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    
+    <div w3-include-html="components/navbar.html"></div>
+    
+    <main class="product_container">
+        <section class="product-section">
+            <div class="product-pic">
+                <img src="images/products/almond_cupcake.png" alt="almond cupcake">
+            </div>
+
+            <div class="product-content">
+                <div class="product-text">
+                  <h3>Almond Cupcakes</h3>
+                    <p class="price">$9.99</p>
+                </div>
+                <div class="product-quantity">
+                    <div class="quantity-controls">
+                        <button class="8-piece" data-price="9.99">8 pieces</button>
+                        <button class="12-piece" data-price="13.99">12 pieces</button>
+                        <button class="20-piece" data-price="21.99">20 pieces</button>
+                    </div>
+                    <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+                </div>
+                <h4 class="description-title">Description</h4>
+                <p class="description-text">Light and fluffy almond-flavored cupcakes topped with a creamy frosting</p>
+            </div>
+        </section>
+
+        <section class="review-container">
+            <h4 class="review-title">Reviews</h4>
+    </main>
+    
+    <div w3-include-html="components/footer.html"></div>
+    <script src="js/individual.js"></script>
+    <script>
+        w3.includeHTML(() => {
+          const hamburgerBtn = document.getElementById("hamburger-btn");
+          const closeBtn = document.getElementById("close-btn");
+          const navbarMenu = document.getElementById("navbar-menu");
+  
+          hamburgerBtn?.addEventListener("click", () => {
+            navbarMenu.classList.add("open");
+          });
+  
+          closeBtn?.addEventListener("click", () => {
+            navbarMenu.classList.remove("open");
+          });
+  
+          const cartIcon = document.getElementById("shopping-cart");
+          const addToCartButton = document.getElementById('add-to-cart');
+          const overlay = document.getElementById("cart-overlay");
+          const closeOverlay = document.getElementById("close-overlay");
+          cartIcon?.addEventListener("click", () => {
+            overlay.classList.add("active");
+          });
+          addToCartButton?.addEventListener("click", () => {
+            overlay.classList.add("active");
+          });
+  
+          closeOverlay?.addEventListener("click", () => {
+            overlay.classList.remove("active");
+          });
+        });
+      </script>
+</body>

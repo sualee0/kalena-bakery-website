@@ -1,0 +1,20 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #382f38;
+  --navbar-color: #eb92a2;
+  --secondary-color: #c95c73;
+  --background-light: #fee1e7;
+  --background-white: #fcf4f5;
+  --light-text-color: #726671;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+}
