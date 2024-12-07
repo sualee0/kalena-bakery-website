@@ -126,7 +126,7 @@ const renderProducts = (products) => {
     imageElement.classList.add("content-image");
 
     imageWrapper.addEventListener("click", () => {
-      window.location.href = "/individual/index.html";
+      window.location.href = "individual.html";
     });
 
     imageWrapper.appendChild(imageElement);

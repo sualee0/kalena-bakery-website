@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/products.css" />
-    <link rel="stylesheet" href="/css/shopping_cart.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/shopping_cart.css" />
+    <link rel="stylesheet" href="css/404.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,30 +21,25 @@
     />
     <title>Products</title>
   </head>
+  <body>
+    <div w3-include-html="components/navbar.html"></div>
 
-  <body class="products-page">
-    <div w3-include-html="/components/navbar.html"></div>
-    <h2>Products</h2>
-    <div class="container">
-      <div class="circle-section">
-        <div class="circle active" data-category="ALL">
-          <h4>ALL</h4>
-        </div>
-        <div class="circle" data-category="TREATS">
-          <h4>TREATS</h4>
-        </div>
-        <div class="circle" data-category="FRUIT SPECIALS">
-          <h4>FRUIT SPECIALS</h4>
-        </div>
-        <div class="circle" data-category="SWEET SNACKS">
-          <h4>SWEET SNACKS</h4>
-        </div>
-      </div>
-      <div class="content-section-container"></div>
+    <div class="notfound-page">
+      <img src="images/404_illustration.png" alt="404 illustration" />
+      <h2>COMING SOON</h2>
+      <p>
+        Kalena's Bakery is preparing something delicious! Our social media
+        presence and online ordering are currently being crafted. Stay tuned for
+        updates and sweet surprises.
+      </p>
+      <a href="index.html"> 
+      <button class="home-btn" aria-label="Go to Home Page">
+        <i class="fa fa-home fa-lg"></i>
+        Back to homepage
+      </button>
+      </a>
     </div>
-    <div w3-include-html="/components/footer.html"></div>
-
-    <script src="/js/products.js"></script>
+    <div w3-include-html="components/footer.html"></div>
     <script>
       w3.includeHTML(() => {
         const hamburgerBtn = document.getElementById("hamburger-btn");
