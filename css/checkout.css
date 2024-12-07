@@ -1,5 +1,6 @@
 .checkout-container {
   display: flex;
+  min-height: 500px;
   flex-direction: column;
   padding: 1.5rem;
   color: var(--text-color);
