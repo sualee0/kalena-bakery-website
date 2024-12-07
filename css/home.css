@@ -142,6 +142,10 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.scroll-item h3:hover, .scroll-item h3:focus {
+  text-decoration: underline;
+}
+
 .img-wrapper {
   width: 50vw;
   height: 50vw;
@@ -203,7 +207,7 @@ body {
   display: none;
 }
 
-.policy-line {
+.policy-line, .refund-line {
   width: 90vw;
   border: 1px solid #ccc;
 }
@@ -313,14 +317,14 @@ body {
   .policy {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5vw;
     margin-top: 0;
+    margin-bottom: 6em;
   }
 
   .delivery {
     grid-column: 1/2;
     margin-bottom: 0;
-    width: 40vw;
+    width: 35vw;
   }
 
   .delivery h3 {
@@ -330,11 +334,16 @@ body {
 
   .refund {
     grid-column: 2/3;
-    width: 40vw;
+    width: 35vw;
   }
 
   .policy-line {
-    width: 40vw;
+    width: 35vw;
+    margin-bottom: 1em;
+  }
+
+  .refund-line {
+    width: 36vw;
     margin-bottom: 1em;
   }
 
@@ -347,6 +356,7 @@ body {
 @media only screen and (min-width: 1100px) {
   .logo {
     display: block;
-    margin-top: 5em;
+    margin-top: 7em;
+    width: 35vw;
   }
 }
