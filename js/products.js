@@ -113,7 +113,7 @@ const contentData = [
     description:
       "Crispy waffle cones coated in strawberry crunch and filled with creamy goodness",
     image: "images/products/strawberry_crunch_waffle_cones.png",
-    link: "strawberry_cupcake.html",
+    link: "strawberry_crunch_waffle.html",
     rating: 3,
   },
 ];
