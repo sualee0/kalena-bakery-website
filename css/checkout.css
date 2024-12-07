@@ -33,6 +33,7 @@ h3 {
   align-items: start;
   gap: 5px;
   padding: 10px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .item-details {
