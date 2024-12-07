@@ -22,4 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   closeOverlay?.addEventListener("click", () => {
     overlay.classList.remove("active");
   });
+
+  document
+    .getElementById("checkout-btn")
+    .addEventListener("click", function () {
+      window.location.href = "checkout.html";
+    });
 });
