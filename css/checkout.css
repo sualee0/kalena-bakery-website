@@ -1,6 +1,5 @@
 .checkout-container {
   display: flex;
-  min-height: 500px;
   flex-direction: column;
   padding: 1.5rem;
   color: var(--text-color);
@@ -108,8 +107,22 @@ h3 {
   outline: none;
 }
 
-label {
-  margin-top: 10px;
+.accordion-content label {
+  padding-top: 1em;
+}
+
+#shipping-form label {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+input[type="text"] {
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .checkout-sidebar {
@@ -151,6 +164,16 @@ label {
 }
 
 @media (min-width: 768px) {
+  .cart-items,
+  .accordion-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .accordion-container {
+    margin-top: 1.5em;
+  }
+
   .checkout-body {
     flex-direction: row;
     align-items: start;
