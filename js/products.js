@@ -49,7 +49,7 @@ const contentData = [
     description:
       "Rich and moist chocolate cupcakes topped with decadent chocolate frosting",
     image: "images/products/chocolate_cupcake.png",
-    link: "chocolate_cc.html",
+    link: "choco_cc.html",
     rating: 4,
   },
   {
