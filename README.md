@@ -22,5 +22,6 @@ Credit:
     - https://www.w3schools.com/jsref/met_element_getattribute.asp
 
 Note:
+- We went to office hours, and Al Pagar said that our shopping cart component is considered as a content area. 
+- Due to the scope of the final project requirements, global state management is not implemented. Thus, products added to the shopping cart will not be stored and the products in the checkout page are static.
 
-- Due to the scope of the final project requirements, global state management is not implemented. Thus, products added to the shopping cart will not be stored.
