@@ -75,10 +75,9 @@
   transition: color 0.3s ease-in-out;
 }
 
-.quantity-controls button:hover,
-.quantity-controls button:focus {
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
+.quantity-controls button:hover, .quantity-controls button.selected {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .add-to-cart {
