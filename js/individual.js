@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.getElementById("cart-overlay");
   const priceElement = document.querySelector(".price");
 
   const quantityButtons = document.querySelectorAll(
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     cartItems.push(cartItem);
-
+    overlay.classList.add("active");
     updateCart();
   });
 

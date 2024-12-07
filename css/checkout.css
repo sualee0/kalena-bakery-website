@@ -144,7 +144,7 @@ input[type="text"] {
   color: var(--secondary-color);
 }
 
-.checkout-btn {
+.payment-btn {
   background-color: var(--secondary-color);
   color: white;
   border: none;
@@ -158,7 +158,7 @@ input[type="text"] {
   transition: color 0.3s ease-in-out;
 }
 
-.checkout-btn:hover {
+.payment-btn:hover {
   background-color: var(--background-light);
   color: var(--text-color);
 }
