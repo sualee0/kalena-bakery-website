@@ -147,6 +147,11 @@ const renderProducts = (products) => {
     title.classList.add("title");
     title.textContent = data.title;
 
+    const link = document.createElement("a");
+    link.classList.add("link");
+    link.href = data.link;
+    link.appendChild(title);
+
     const description = document.createElement("p");
     description.classList.add("description");
     description.textContent = data.description;
@@ -164,7 +169,7 @@ const renderProducts = (products) => {
     }
 
     contentSection.appendChild(imageWrapper);
-    contentSection.appendChild(title);
+    contentSection.appendChild(link);
     contentSection.appendChild(description);
     contentSection.appendChild(ratingContainer);
 

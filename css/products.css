@@ -14,6 +14,14 @@
   margin-bottom: 1.5rem;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.content-section:hover .title {
+  color: var(--secondary-color);
+}
+
 .circle {
   width: 120px;
   height: 120px;
@@ -83,11 +91,11 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.content-image-wrapper:hover .content-image {
+.content-section:hover .content-image {
   transform: scale(1.05);
 }
 
-.content-image-wrapper:hover::after {
+.content-section:hover .content-image-wrapper::after {
   opacity: 1;
 }
 
