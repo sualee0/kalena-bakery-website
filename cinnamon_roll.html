@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalena's Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/individual.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/shopping_cart.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    
+    <div w3-include-html="components/navbar.html"></div>
+    
+    <main class="product_container">
+        <section class="product-section">
+            <div class="product-pic">
+                <img src="images/products/cinnamon roll.png" alt="cinnamon roll with cream cheese frosting on white plate">
+            </div>
+
+            <div class="product-content">
+                <div class="product-text">
+                    <h3>Cinnamon Roll</h3>
+                    <p class="price">$6.99</p>
+                </div>
+                <div class="product-quantity">
+                    <div class="quantity-controls">
+                        <button class="small" data-price="6.99">4 pieces</button>
+                        <button class="medium" data-price="9.99">8 pieces</button>
+                        <button class="large" data-price="15.99">12 pieces</button>
+                    </div>
+                    <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+                </div>
+                <h4 class="description-title">Description</h4>
+                <p class="description-text">Warm, gooey cinnamon rolls drizzled with cream cheese frosting</p>
+            </div>
+        </section>
+
+        <section class="review-container">
+            <h4 class="review-title">Reviews</h4>
+            <div class="review-item">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="review-date">Dec 3rd, 2024</span>
+                <p class="review-text">The cinnamon rolls were so homey and went perfect with a glass of milk.</p>
+            </div>
+            <div class="review-item">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="review-date">Nov 18th, 2024</span>
+                <p class="review-text">I don't really see cinnamon rolls being sold a lot so I decided to give these a try. They exceeded my expectations.</p>
+            </div>
+            <div class="review-item">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="review-date">Oct 12th, 2024</span>
+                <p class="review-text">I bought them for me but I think my kids loved them more. :D</p>
+            </div>
+            <div class="review-item">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            <span class="review-date">Oct 1st, 2024</span>
+            <p class="review-text">You can never go wrong with cinnamon rolls. They were still warm and gooey when they were delivered.</p>
+            </div>
+            <div class="review-item">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="review-date">Sep 7th, 2024</span>
+                <p class="review-text">These came surprisingly fast. They were delivered the day I placed the order, so I was able to get my sweet fix.</p>
+    </main>
+    
+    <div w3-include-html="components/footer.html"></div>
+    <script src="js/individual.js"></script>
+    <script>
+        w3.includeHTML(() => {
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const navbarMenu = document.getElementById("navbar-menu");
+
+        hamburgerBtn?.addEventListener("click", () => {
+            navbarMenu.classList.add("open");
+        });
+
+        closeBtn?.addEventListener("click", () => {
+            navbarMenu.classList.remove("open");
+        });
+
+        const cartIcon = document.getElementById("shopping-cart");
+        const addToCartButton = document.getElementById('add-to-cart');
+        const overlay = document.getElementById("cart-overlay");
+        const closeOverlay = document.getElementById("close-overlay");
+        console.log("clicked");
+        cartIcon?.addEventListener("click", () => {
+            overlay.classList.add("active");
+        });
+        addToCartButton?.addEventListener("click", () => {
+            overlay.classList.add("active");
+        });
+
+        closeOverlay?.addEventListener("click", () => {
+            overlay.classList.remove("active");
+        });
+        });
+    </script>
+</body>
