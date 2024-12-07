@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/shopping_cart.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" href="images/logo.png" />
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -25,7 +24,66 @@
     <link rel="stylesheet" href="css/checkout.css" />
   </head>
   <body>
-    <div w3-include-html="components/navbar.html"></div>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <button class="hamburger align-justify" id="hamburger-btn">
+          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </button>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+        <div class="navbar-menu" id="navbar-menu">
+          <button class="close-btn align-justify" id="close-btn">
+            <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+          </button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#homepage-about">About</a></li>
+            <li><a href="index.html#policies">Delivery & Return Policy</a></li>
+            <li><a href="products.html">Our Offerings</a></li>
+          </ul>
+        </div>
+        <i
+          class="fa fa-shopping-cart fa-lg"
+          id="shopping-cart"
+          aria-hidden="true"
+        ></i>
+      </div>
+    </nav>
+    <div class="overlay" id="cart-overlay">
+      <div class="cart-modal">
+        <div class="modal-header">
+          <i
+            class="fa fa-arrow-left fa-lg"
+            id="close-overlay"
+            aria-hidden="true"
+          ></i>
+          <h2>Shopping Cart</h2>
+        </div>
+        <div class="cart-item"></div>
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span class="summary-label">Subtotal</span>
+            <span class="summary-value">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Shipping & Handling</span>
+            <span class="summary-value">TBD</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Tax</span>
+            <span class="summary-value">TBD</span>
+          </div>
+          <div class="summary-row total">
+            <span class="summary-label">Estimated Total</span>
+            <span class="summary-value">$0.00</span>
+          </div>
+          <a href="checkout.html" class="checkout-btn-link">
+            <button id="checkout-btn" class="checkout-btn">Check out</button>
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="checkout-container">
       <header>
         <h2>Checkout</h2>
@@ -192,34 +250,25 @@
         </div>
       </div>
     </div>
-    <div w3-include-html="components/footer.html"></div>
-    <script>
-      w3.includeHTML(() => {
-        const hamburgerBtn = document.getElementById("hamburger-btn");
-        const closeBtn = document.getElementById("close-btn");
-        const navbarMenu = document.getElementById("navbar-menu");
-
-        hamburgerBtn?.addEventListener("click", () => {
-          navbarMenu.classList.add("open");
-        });
-
-        closeBtn?.addEventListener("click", () => {
-          navbarMenu.classList.remove("open");
-        });
-
-        const cartIcon = document.getElementById("shopping-cart");
-        const overlay = document.getElementById("cart-overlay");
-        const closeOverlay = document.getElementById("close-overlay");
-        cartIcon?.addEventListener("click", () => {
-          overlay.classList.add("active");
-        });
-
-        closeOverlay?.addEventListener("click", () => {
-          overlay.classList.remove("active");
-        });
-      });
-    </script>
-
+    <footer class="footer">
+      <div class="connect-with-us">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-links">
+          <a href="404.html"><i class="fa fa-instagram fa-lg"></i></a>
+          <a href="404.html"><i class="fa fa-envelope fa-lg"></i></a>
+          <a href="404.html"><i class="fa fa-facebook fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="learn">
+        <h3>LEARN</h3>
+        <ul>
+          <li><a href="index.html#homepage-about">About</a></li>
+          <li><a href="index.html#policies">Delivery & Return Policy</a></li>
+          <li><a href="products.html">Our Offerings</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/component.js"></script>
     <script src="js/checkout.js"></script>
   </body>
 </html>
