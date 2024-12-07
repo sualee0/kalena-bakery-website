@@ -25,6 +25,7 @@ const contentData = [
     description:
       "Light and fluffy almond-flavored cupcakes topped with a creamy frosting",
     image: "images/products/almond_cupcake.png",
+    link: "almond_cupcake.html",
     rating: 3,
   },
   {
@@ -32,6 +33,7 @@ const contentData = [
     description:
       "Fresh strawberries dipped in premium chocolate, perfect for gifting",
     image: "images/products/assorted_chocolate_dipped_strawberries.png",
+    link: "assorted_strawberry.html",
     rating: 4,
   },
   {
@@ -39,6 +41,7 @@ const contentData = [
     description:
       "A delightful bouquet of chocolate-dipped strawberries, beautifully arranged",
     image: "images/products/chocolate_covered_strawberry_bouquet.png",
+    link: "bouquet.html",
     rating: 4,
   },
   {
@@ -46,6 +49,7 @@ const contentData = [
     description:
       "Rich and moist chocolate cupcakes topped with decadent chocolate frosting",
     image: "images/products/chocolate_cupcake.png",
+    link: "chocolate_cc.html",
     rating: 4,
   },
   {
@@ -53,6 +57,7 @@ const contentData = [
     description:
       "Warm, gooey cinnamon rolls drizzled with cream cheese frosting",
     image: "images/products/cinnamon_roll.png",
+    link: "cinnamon_roll.html",
     rating: 4,
   },
   {
@@ -60,6 +65,7 @@ const contentData = [
     description:
       "A combination of sweet cupcakes and chocolate-dipped strawberries",
     image: "images/products/cupcake_and_strawberry_bundle.png",
+    link: "cupcake_bundle.html",
     rating: 4,
   },
   {
@@ -67,6 +73,7 @@ const contentData = [
     description:
       "A classic holiday fruit cake packed with dried fruits and nuts",
     image: "images/products/fruit_cake.png",
+    link: "fruit_cake.html",
     rating: 4,
   },
   {
@@ -74,6 +81,7 @@ const contentData = [
     description:
       "An assortment of delicate and colorful French macarons in various flavors",
     image: "images/products/macaron_bundle.png",
+    link: "macaron_bundle.html",
     rating: 4,
   },
   {
@@ -81,6 +89,7 @@ const contentData = [
     description:
       "Mint-flavored macarons with a smooth chocolate ganache filling",
     image: "images/products/mint_chocolate_macaron.png",
+    link: "mint_choco.html",
     rating: 3,
   },
   {
@@ -88,6 +97,7 @@ const contentData = [
     description:
       "Chocolate cupcakes with a graham cracker crust, topped with toasted marshmallow frosting",
     image: "images/products/s_mores_cupcake.png",
+    link: "smores_cupcake.html",
     rating: 4,
   },
   {
@@ -95,6 +105,7 @@ const contentData = [
     description:
       "Moist strawberry cupcakes with a crunchy topping, bursting with flavor",
     image: "images/products/strawberry_crunch_cupcake.png",
+    link: "strawberry_cupcake.html",
     rating: 5,
   },
   {
@@ -102,6 +113,7 @@ const contentData = [
     description:
       "Crispy waffle cones coated in strawberry crunch and filled with creamy goodness",
     image: "images/products/strawberry_crunch_waffle_cones.png",
+    link: "strawberry_cupcake.html",
     rating: 3,
   },
 ];
@@ -126,7 +138,7 @@ const renderProducts = (products) => {
     imageElement.classList.add("content-image");
 
     imageWrapper.addEventListener("click", () => {
-      window.location.href = "individual.html";
+      window.location.href = data.link;
     });
 
     imageWrapper.appendChild(imageElement);
