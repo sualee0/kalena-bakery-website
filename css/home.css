@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  color: var(--text-color);
 }
 
 .inter-font {
@@ -45,7 +46,7 @@ body {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   color: white;
-  background-color: #fa8ca2;
+  background-color: var(--secondary-color);
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
@@ -71,7 +72,7 @@ body {
 }
 
 .pink-line {
-  border: 1pt solid #fa8ca2;
+  border: 1pt solid var(--secondary-color);
   width: 20vw;
   margin-bottom: 1em;
 }
@@ -185,8 +186,8 @@ body {
 
 .products-button:hover,
 .products-button:focus {
-  border-color: #c95c73;
-  color: #c95c73;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .about p,

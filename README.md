@@ -15,10 +15,12 @@ Credit:
 - JS scripts:
   - [To reuse footer and navbar](https://www.w3schools.com/howto/howto_html_include.asp)
   - [To open navbar, shopping cart, and filter products based on different sections](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
-  - To reuse the content-section components in 'Products' and the review components in 'Individual':
+  - To reuse the content-section components in 'Products' & add interactivity to the shopping cart:
     - https://www.w3schools.com/jsref/met_document_createelement.asp
     - https://www.w3schools.com/jsreF/prop_element_classlist.asp
+    - https://www.w3schools.com/css/css_selectors.asp
+    - https://www.w3schools.com/jsref/met_element_getattribute.asp
 
 Note:
 
-- Due to the scope of the final project requirements, the shopping cart is more like a static component. If you add to cart a product, chocolate chip cookies will still be there as a placeholder.
+- Due to the scope of the final project requirements, global state management is not implemented. Thus, products added to the shopping cart will not be stored.
