@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/products.css" />
     <link rel="stylesheet" href="css/shopping_cart.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +22,7 @@
     />
     <title>Products</title>
   </head>
+
   <body class="products-page">
     <div w3-include-html="components/navbar.html"></div>
     <h2>Products</h2>
@@ -42,32 +44,11 @@
       <div class="content-section-container"></div>
     </div>
     <div w3-include-html="components/footer.html"></div>
+
     <script src="js/products.js"></script>
     <script>
       w3.includeHTML(() => {
-        const hamburgerBtn = document.getElementById("hamburger-btn");
-        const closeBtn = document.getElementById("close-btn");
-        const navbarMenu = document.getElementById("navbar-menu");
 
-        hamburgerBtn?.addEventListener("click", () => {
-          navbarMenu.classList.add("open");
-        });
-
-        closeBtn?.addEventListener("click", () => {
-          navbarMenu.classList.remove("open");
-        });
-
-        const cartIcon = document.getElementById("shopping-cart");
-        const overlay = document.getElementById("cart-overlay");
-        const closeOverlay = document.getElementById("close-overlay");
-        console.log("clicked");
-        cartIcon?.addEventListener("click", () => {
-          overlay.classList.add("active");
-        });
-
-        closeOverlay?.addEventListener("click", () => {
-          overlay.classList.remove("active");
-        });
       });
     </script>
   </body>

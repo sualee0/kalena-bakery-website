@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/shopping_cart.css" />
     <link rel="stylesheet" href="css/styles.css" />
+       <link rel="icon" type="image/png" href="images/logo.png" />
   <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link
@@ -24,7 +25,7 @@
     <main class="product_container">
         <section class="product-section">
             <div class="product-pic">
-                <img src="images/products/almond cupcake.png" alt="almond cupcake">
+                <img src="images/products/almond_cupcake.png" alt="almond cupcake">
             </div>
 
             <div class="product-content">
@@ -123,7 +124,6 @@
           const addToCartButton = document.getElementById('add-to-cart');
           const overlay = document.getElementById("cart-overlay");
           const closeOverlay = document.getElementById("close-overlay");
-          console.log("clicked");
           cartIcon?.addEventListener("click", () => {
             overlay.classList.add("active");
           });
