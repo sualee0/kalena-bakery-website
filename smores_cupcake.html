@@ -1,182 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalena's Bakery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/individual.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/individual.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/shopping_cart.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-header">
-          <button class="hamburger align-justify" id="hamburger-btn">
-            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+      <div class="navbar-header">
+        <button class="hamburger align-justify" id="hamburger-btn">
+          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </button>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+        <div class="navbar-menu" id="navbar-menu">
+          <button class="close-btn align-justify" id="close-btn">
+            <i class="fa fa-times fa-lg" aria-hidden="true"></i>
           </button>
-          <a href="index.html">
-            <img src="images/logo.png" alt="Logo" />
-          </a>
-          <div class="navbar-menu" id="navbar-menu">
-            <button class="close-btn align-justify" id="close-btn">
-              <i class="fa fa-times fa-lg" aria-hidden="true"></i>
-            </button>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#homepage-about">About</a></li>
-              <li><a href="index.html#policies">Delivery & Return Policy</a></li>
-              <li><a href="products.html">Our Offerings</a></li>
-            </ul>
-          </div>
-          <i
-            class="fa fa-shopping-cart fa-lg"
-            id="shopping-cart"
-            aria-hidden="true"
-          ></i>
-        </div>
-      </nav>
-      <div class="overlay" id="cart-overlay">
-        <div class="cart-modal">
-          <div class="modal-header">
-            <i
-              class="fa fa-arrow-left fa-lg"
-              id="close-overlay"
-              aria-hidden="true"
-            ></i>
-            <h2>Shopping Cart</h2>
-          </div>
-          <div class="cart-item"></div>
-          <div class="cart-summary">
-            <div class="summary-row">
-              <span class="summary-label">Subtotal</span>
-              <span class="summary-value">$0.00</span>
-            </div>
-            <div class="summary-row">
-              <span class="summary-label">Shipping & Handling</span>
-              <span class="summary-value">TBD</span>
-            </div>
-            <div class="summary-row">
-              <span class="summary-label">Tax</span>
-              <span class="summary-value">TBD</span>
-            </div>
-            <div class="summary-row total">
-              <span class="summary-label">Estimated Total</span>
-              <span class="summary-value">$0.00</span>
-            </div>
-              <button id="checkout-btn" class="checkout-btn">Check out</button>
-          </div>
-        </div>
-      </div>     
-    <main class="product_container">
-        <section class="product-section">
-            <div class="product-pic">
-                <img src="images/products/s_mores_cupcake.png" alt="s'mores cupcakes">
-            </div>
-
-            <div class="product-content">
-                <div class="product-text">
-                    <h3>Chocolate Cupcakes</h3>
-                    <p class="price">$13.99</p>
-                </div>
-                <div class="product-quantity">
-                    <div class="quantity-controls">
-                        <button class="small" data-price="13.99">8 pieces</button>
-                        <button class="medium" data-price="17.99">12 pieces</button>
-                        <button class="large" data-price="24.99">20 pieces</button>
-                    </div>
-                    <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
-                </div>
-                <h4 class="description-title">Description</h4>
-                <p class="description-text">Chocolate cupcakes with a graham cracker crust, topped with toasted marshmallow frosting</p>
-            </div>
-        </section>
-
-        <section class="review-container">
-            <h4 class="review-title">Reviews</h4>
-            <div class="review-item">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <span class="review-date">Dec 1st, 2024</span>
-                <p class="review-text">The toasted marshmallow really elevated the cupcake. I felt like I was really eating a s'mores.</p>
-            </div>
-            <div class="review-item">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <span class="review-date">Nov 28th, 2024</span>
-                <p class="review-text">I brought these to a family gathering and they literally disappeared in minutes. I can say they were a hit.</p>
-            </div>
-            <div class="review-item">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <span class="review-date">Nov 16th, 2024</span>
-                <p class="review-text">The combination of rich chocolate, sweet marshmallow, and graham cracker was perfection. I definitely have to get these again.</p>
-            </div>
-            <div class="review-item">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            <span class="review-date">Oct 30th, 2024</span>
-            <p class="review-text">It's like eating a s'mores, but better. The graham cracker crumble on top added the perfect crunch.</p>
-            </div>
-            <div class="review-item">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <span class="review-date">Sep 21st, 2024</span>
-                <p class="review-text">I didn't think s'mores could get better until I tried these cupcakes. So moist, flavorful, and perfectly sweet!</p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="connect-with-us">
-          <h3>CONNECT WITH US</h3>
-          <div class="social-links">
-            <a href="404.html"><i class="fa fa-instagram fa-lg"></i></a>
-            <a href="404.html"><i class="fa fa-envelope fa-lg"></i></a>
-            <a href="404.html"><i class="fa fa-facebook fa-lg"></i></a>
-          </div>
-        </div>
-        <div class="learn">
-          <h3>LEARN</h3>
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="index.html#homepage-about">About</a></li>
             <li><a href="index.html#policies">Delivery & Return Policy</a></li>
             <li><a href="products.html">Our Offerings</a></li>
           </ul>
         </div>
-      </footer>
-      <script src="js/individual.js"></script>
-      <script src="js/component.js"></script>
-</body>
+        <i
+          class="fa fa-shopping-cart fa-lg"
+          id="shopping-cart"
+          aria-hidden="true"
+        ></i>
+      </div>
+    </nav>
+    <div class="overlay" id="cart-overlay">
+      <div class="cart-modal">
+        <div class="modal-header">
+          <i
+            class="fa fa-arrow-left fa-lg"
+            id="close-overlay"
+            aria-hidden="true"
+          ></i>
+          <h2>Shopping Cart</h2>
+        </div>
+        <div class="cart-item"></div>
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span class="summary-label">Subtotal</span>
+            <span class="summary-value">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Shipping & Handling</span>
+            <span class="summary-value">TBD</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Tax</span>
+            <span class="summary-value">TBD</span>
+          </div>
+          <div class="summary-row total">
+            <span class="summary-label">Estimated Total</span>
+            <span class="summary-value">$0.00</span>
+          </div>
+          <button id="checkout-btn" class="checkout-btn">Check out</button>
+        </div>
+      </div>
+    </div>
+    <main class="product_container">
+      <section class="product-section">
+        <div class="product-pic">
+          <img
+            src="images/products/s_mores_cupcake.png"
+            alt="s'mores cupcakes"
+          />
+        </div>
+
+        <div class="product-content">
+          <div class="product-text">
+            <h3>S'More Cupcakes</h3>
+            <p class="price">$13.99</p>
+          </div>
+          <div class="product-quantity">
+            <div class="quantity-controls">
+              <button class="small" data-price="13.99">8 pieces</button>
+              <button class="medium" data-price="17.99">12 pieces</button>
+              <button class="large" data-price="24.99">20 pieces</button>
+            </div>
+            <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+          </div>
+          <h4 class="description-title">Description</h4>
+          <p class="description-text">
+            S'More cupcakes with a graham cracker crust, topped with toasted
+            marshmallow frosting
+          </p>
+        </div>
+      </section>
+
+      <section class="review-container">
+        <h4 class="review-title">Reviews</h4>
+        <div class="review-item">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="review-date">Dec 1st, 2024</span>
+          <p class="review-text">
+            The toasted marshmallow really elevated the cupcake. I felt like I
+            was really eating a s'mores.
+          </p>
+        </div>
+        <div class="review-item">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="review-date">Nov 28th, 2024</span>
+          <p class="review-text">
+            I brought these to a family gathering and they literally disappeared
+            in minutes. I can say they were a hit.
+          </p>
+        </div>
+        <div class="review-item">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="review-date">Nov 16th, 2024</span>
+          <p class="review-text">
+            The combination of rich chocolate, sweet marshmallow, and graham
+            cracker was perfection. I definitely have to get these again.
+          </p>
+        </div>
+        <div class="review-item">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="review-date">Oct 30th, 2024</span>
+          <p class="review-text">
+            It's like eating a s'mores, but better. The graham cracker crumble
+            on top added the perfect crunch.
+          </p>
+        </div>
+        <div class="review-item">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="review-date">Sep 21st, 2024</span>
+          <p class="review-text">
+            I didn't think s'mores could get better until I tried these
+            cupcakes. So moist, flavorful, and perfectly sweet!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="connect-with-us">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-links">
+          <a href="404.html"><i class="fa fa-instagram fa-lg"></i></a>
+          <a href="404.html"><i class="fa fa-envelope fa-lg"></i></a>
+          <a href="404.html"><i class="fa fa-facebook fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="learn">
+        <h3>LEARN</h3>
+        <ul>
+          <li><a href="index.html#homepage-about">About</a></li>
+          <li><a href="index.html#policies">Delivery & Return Policy</a></li>
+          <li><a href="products.html">Our Offerings</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/individual.js"></script>
+    <script src="js/component.js"></script>
+  </body>
 </html>

@@ -95,7 +95,7 @@ const contentData = [
   {
     title: "S'Mores Cupcakes",
     description:
-      "Chocolate cupcakes with a graham cracker crust, topped with toasted marshmallow frosting",
+      "S'Mores cupcakes with a graham cracker crust, topped with toasted marshmallow frosting",
     image: "images/products/s_mores_cupcake.png",
     link: "smores_cupcake.html",
     rating: 4,

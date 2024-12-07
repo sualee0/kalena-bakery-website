@@ -20,10 +20,12 @@
 }
 
 .hamburger,
-.close-btn {
+.close-btn,
+.shopping-cart {
   background: none;
   border: none;
   display: block;
+  color: var(--text-color);
 }
 
 .close-btn {
