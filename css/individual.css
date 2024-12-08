@@ -51,17 +51,13 @@
 }
 
 .quantity-controls {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  width: auto;
-  margin-left: 0;
-  flex-wrap: wrap;
 }
 
 .quantity-controls button {
-  width: 32%;
+  width: auto;
   height: 30px;
   padding: 0;
   border-radius: 4px;
@@ -75,9 +71,10 @@
   transition: color 0.3s ease-in-out;
 }
 
-.quantity-controls button:hover, .quantity-controls button.selected {
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+.quantity-controls button:hover,
+.quantity-controls button.selected {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .add-to-cart {
