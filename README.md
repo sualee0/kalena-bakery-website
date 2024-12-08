@@ -20,7 +20,6 @@ Credit:
     - Illustration in 404.html: https://notioly.com/
 - Icons: [font-awesome icons](https://fontawesome.com/)
 - JS scripts:
-    - [To reuse footer and navbar](https://www.w3schools.com/howto/howto_html_include.asp)
     - [To open navbar, shopping cart, and filter products based on different sections](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
     - To reuse the content-section components in 'Products' & add interactivity to the shopping cart:
       - https://www.w3schools.com/jsref/met_document_createelement.asp
