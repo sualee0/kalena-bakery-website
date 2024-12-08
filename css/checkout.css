@@ -131,7 +131,10 @@ input[type="text"] {
 
 .checkout-sidebar {
   width: 100%;
+  background-color: #eee;
+  border-radius: 8px;
   position: sticky;
+  padding: 20px;
 }
 
 .summary-row {
