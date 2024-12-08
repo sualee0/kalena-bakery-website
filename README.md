@@ -8,7 +8,7 @@ Our group created this project as an online bakery website inspired by Emily's c
 Pages Created:
 
 - Emily - Homepage
-- Meliora - Products Page, Shopping Cart, Checkout
+- Meliora - Products Page, Shopping Cart, Checkout, and all JS scripts
 - Jade - Individual Product Pages w/ Reviews, 404
 
 Credit:
