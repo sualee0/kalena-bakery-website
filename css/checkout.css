@@ -74,7 +74,7 @@ header {
 
 .accordion-btn {
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   text-align: left;
   font-size: 1.1rem;
   color: var(--text-color);
@@ -83,6 +83,7 @@ header {
   border-bottom: 1px solid #ccc;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .accordion-btn:hover {
