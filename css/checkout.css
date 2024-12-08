@@ -131,7 +131,7 @@ input[type="text"] {
 
 .checkout-sidebar {
   width: 100%;
-  background-color: var(--background-white);
+  background-color: #eee;
   border-radius: 8px;
   position: sticky;
   padding: 20px;
